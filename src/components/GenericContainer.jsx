@@ -6,11 +6,13 @@ import ExampleReducer from "./ExampleReducer";
 import FormUncontrolled from "./FormUncontrolled";
 import H1Card from "./H1Card";
 import ScreenResizer from "./ScreenResizer";
+import ExampleCallback from "./TheuseMemo&Callback/ExampleCallback";
+import ExampleMemo from "./TheuseMemo&Callback/ExampleMemo";
 function GenericContainer(props) {
 
-  useEffect(()=>{
-    document.body.style.backgroundColor="#009688"
-  })
+  // useEffect(()=>{
+  //   document.body.style.backgroundColor="#009688"
+  // })
 
   const [names, setNames] = React.useState([
     {
@@ -33,7 +35,7 @@ function GenericContainer(props) {
   }
   return (
     <>
-      <CompA/>
+      <ExampleCallback/>
     </>
   );
 }
