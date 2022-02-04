@@ -1,9 +1,16 @@
 import React from "react";
+import { useEffect } from "react";
 import "../css/style.css";
+import ExampleReducer from "./ExampleReducer";
 import FormUncontrolled from "./FormUncontrolled";
 import H1Card from "./H1Card";
 import ScreenResizer from "./ScreenResizer";
 function GenericContainer(props) {
+
+  useEffect(()=>{
+    document.body.style.backgroundColor="#009688"
+  })
+
   const [names, setNames] = React.useState([
     {
       name: "dheeman pati",
@@ -25,19 +32,7 @@ function GenericContainer(props) {
   }
   return (
     <>
-      <div className="container">
-        {/* {names.map((item, index) => {
-          return <H1Card content={item.name} key={index} />;
-        })}
-
-        <button className="btn" onClick={() => lastnameonly(names)}>
-          change
-        </button>
-        <button className="btn" onClick={() => setNames([])}>
-          clear
-        </button> */}
-       <FormUncontrolled/>
-      </div>
+      <ExampleReducer/>
     </>
   );
 }
