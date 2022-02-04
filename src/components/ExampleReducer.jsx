@@ -23,8 +23,8 @@ function ExampleReducer(props) {
         <div className='container text-center'>
            <div className='card p-5 shadow'>
                <h1 className='text-primary my-3'>{state}</h1>
-               <button className='btn btn-primary mb-1' onClick={()=>dispatch({type:"INCREMENT"})}>Increment</button>
-               <button className='btn btn-warning' onClick={()=>dispatch({type:"DECREMENT"})}>Decrement</button>
+               <button className='btn btn-primary mb-1' onClick={()=>dispatch({type:"INCREMENT"})}>Increment 👍</button>
+               <button className='btn btn-warning' onClick={()=>dispatch({type:"DECREMENT"})}>Decrement 👎</button>
            </div>
         </div>
     );

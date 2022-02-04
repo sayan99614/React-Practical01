@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import "../css/style.css";
+import CompA from "./context/CompA";
 import ExampleReducer from "./ExampleReducer";
 import FormUncontrolled from "./FormUncontrolled";
 import H1Card from "./H1Card";
@@ -32,7 +33,7 @@ function GenericContainer(props) {
   }
   return (
     <>
-      <ExampleReducer/>
+      <CompA/>
     </>
   );
 }
